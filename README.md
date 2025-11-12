@@ -6,15 +6,15 @@
 
 ## Table of contents
 
-1. [Overview](##overview)
-2. [Key technologies](##key-technologies)
-3. [Important backend development concepts](##important-backend-development-concepts)
+1. [Overview](#overview)
+2. [Key technologies](#key-technologies)
+3. [Important backend development concepts](#important-backend-development-concepts)
 4. [Challenges faced & solutions implemented](#challenges-faced--solutions-implemented)
 5. [Best practices & personal takeaways](#best-practices--personal-takeaways)
 
 ---
 
-# Overview (Program Highlights)
+# Overview
 
 The ALX ProDev Backend program focuses on real-world backend engineering skills:
 - building secure, production-ready APIs and systems using modern tooling, testing practices, and team-ready workflows
@@ -25,9 +25,9 @@ The ALX ProDev Backend program focuses on real-world backend engineering skills:
 - Scalability, observability, and deployment
 - Many more Concepts
 
---
 
-## Key technologies
+
+# Key technologies
 
 * **Python** — core language for backend development and scripting.
 * **Django & Django REST Framework (DRF)** — web framework and API toolkit for building RESTful services.
@@ -35,9 +35,9 @@ The ALX ProDev Backend program focuses on real-world backend engineering skills:
 * **Docker + Kubernetes** — containerization for development and reproducible deployments.
 * **CI/CD** — automated testing and deployment pipelines (Jenkins, GitHub Actions).
 
---
+---
 
-## Important backend development concepts
+# Important backend development concepts
 
 * **Database design**
 
@@ -51,51 +51,48 @@ The ALX ProDev Backend program focuses on real-world backend engineering skills:
   * Complex queries
   * Indexing and Optimization
 
-* **Asynchronous programming**
+* **Python: Asynchronous programming and Context Managers**
+ 
+* **Python Decorators and Generators**
 
-  * Background processing with Celery + Redis for long-running jobs.
-  * Async views and async I/O in Python for concurrency when appropriate.
-  * Tradeoffs between true async stacks and simpler worker-based approaches.
+* **Testing: Unit tests, Integration Tests, Pytest**
 
-* **Caching strategies**
+* **Django (The Python Framework)**
+  * Authentication
+  * REST Framework
+  * Middleware, Signals, Advanced Object Relational Mapping (ORM)
 
-  * HTTP caching headers, ETags for resource caching.
-  * Server-side caches (Redis) for expensive queries and rate-limiting counters.
-  * Cache invalidation patterns (time-based, event-driven, key namespaces).
+* **Shell Basics**
 
-* **
-  * 
-  * Indexing and query planning (use `EXPLAIN` to diagnose slow queries).
-  * Migrations strategy and drift management (dev vs prod).
+* **Container Orchestration: Docker / Kubernetes**
 
+* **CI/CD Pipelines**
 
----
+* **Caching in Django**
 
-# Representative projects & examples
+* **Cron Basics to Advanced Scheduling**
 
-These are short summaries + what to look for in this repo:
+* **Advanced Shell Scripting**
 
-* **KoGidi — Personal 90-day OS**
+* **Advanced Shell Scripting**
 
-  * Goal tracker, habits, dashboard.
-  * Focus: cookie-based JWT auth with refresh rotation, modular Django apps, TTL enforcement.
-* **JechSpace — Workspace Management**
+* **Git Flows**
 
-  * Booking system with RBAC, calendar integration, analytics endpoints.
-  * Focus: booking race conditions, transactional booking flows, Celery for notifications.
-* **HealthBridge AI**
+* **GraphQL**
 
-  * Symptom-logging app for underserved communities.
-  * Focus: multilingual support, offline synchronization patterns, secure handling of sensitive data.
-* **IP Tracking & Security Analytics**
+* **API Documentation using Swagger / OpenAPI**
 
-  * Middleware to log IPs, geolocation enrichment, rate limiting, blacklist management.
+* **Deployment and Documentation**
 
-> See `/projects/` (suggested folder) for architecture diagrams, sample code, API specs, and demo scripts.
+* **IP Tracking & Blocking**
+
+* **Peer Reviews and Peer Learning Days (PLDs)**
 
 ---
 
 # Challenges faced & solutions implemented
+
+> I faced a large number of technical issues, but among the bulk, here's a few I wanted to share:
 
 * **Race conditions during booking (double-booking)**
 
@@ -123,3 +120,6 @@ These are short summaries + what to look for in this repo:
 * **Document technical decisions** — keep README entries for architecture choices; it helps during interviews and handoffs.
 * **Iterate with real usage metrics** — instrument events (`user.login`, `booking.created`) and let data guide optimizations.
 
+---
+
+> Daniel Dohou (A Beautiful Mind 🌼)
